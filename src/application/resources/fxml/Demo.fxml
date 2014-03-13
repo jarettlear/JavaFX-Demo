@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" 
+	prefHeight="400.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" 
+	fx:controller="application.controllers.DemoController">
+  <children>
+    <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" 
+    	AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <bottom>
+        <Pane prefHeight="60.0" prefWidth="400.0" />
+      </bottom>
+      <center>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+          <children>
+            <Button mnemonicParsing="false" onAction="#preInitialization" text="Pre Initialization" />
+            <Button mnemonicParsing="false" onAction="#transition" text="Transitions" />
+            <Button mnemonicParsing="false" onAction="#funStuff" text="Fun Stuff" />
+          </children>
+        </VBox>
+      </center>
+      <left>
+        <Pane prefHeight="150.0" prefWidth="60.0" />
+      </left>
+      <right>
+        <Pane prefHeight="150.0" prefWidth="60.0" />
+      </right>
+      <top>
+        <Pane prefHeight="60.0" prefWidth="400.0" />
+      </top>
+    </BorderPane>
+  </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controllers.PreInitializationController">
+  <children>
+    <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <bottom>
+        <Pane prefHeight="50.0" prefWidth="600.0" />
+      </bottom>
+      <center>
+        <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+          <children>
+            <Label fx:id="label1" text="Label" />
+            <ComboBox fx:id="box1">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Separator prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <Label fx:id="label2" text="Label" />
+            <ComboBox fx:id="box2">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="500.0" VBox.vgrow="ALWAYS">
+              <children>
+                <Button mnemonicParsing="false" onAction="#back" text="Back" />
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+      </center>
+      <left>
+        <Pane prefHeight="150.0" prefWidth="50.0" />
+      </left>
+      <right>
+        <Pane prefHeight="150.0" prefWidth="50.0" />
+      </right>
+      <top>
+        <Pane prefHeight="50.0" prefWidth="600.0" />
+      </top>
+    </BorderPane>
+  </children>
+</AnchorPane>

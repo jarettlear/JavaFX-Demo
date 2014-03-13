@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controllers.FunStuff">
+  <children>
+    <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <bottom>
+        <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="600.0">
+          <children>
+            <Button mnemonicParsing="false" onAction="#back" text="Back" />
+          </children>
+          <padding>
+            <Insets right="40.0" />
+          </padding>
+        </HBox>
+      </bottom>
+      <center>
+        <VBox alignment="CENTER_LEFT" prefHeight="-1.0" prefWidth="-1.0" style="-fx-border-color:#ccc;" BorderPane.alignment="CENTER_LEFT">
+          <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0" VBox.vgrow="ALWAYS">
+              <children>
+                <Label text="Simple Layout" />
+                <Label text="No Syles" />
+                <Button mnemonicParsing="false" text="Button" />
+                <ComboBox>
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Item 1" />
+                      <String fx:value="Item 2" />
+                      <String fx:value="Item 3" />
+                    </FXCollections>
+                  </items>
+                </ComboBox>
+                <CheckBox mnemonicParsing="false" text="CheckBox" />
+              </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0" VBox.vgrow="ALWAYS">
+              <children>
+                <Label text="A little better">
+                  <font>
+                    <Font name="Arial Bold" size="16.0" fx:id="x1" />
+                  </font>
+                </Label>
+                <Label text="Some basic styles">
+                  <font>
+                    <Font name="Arial" size="16.0" fx:id="x2" />
+                  </font>
+                </Label>
+                <Button mnemonicParsing="false" style="-fx-background-radius: 4px;&#10;&#9;-fx-font-family: Arial;&#10;&#9;-fx-font-size: 18px;&#10;&#9;-fx-text-fill:#ffffff;&#10;" text="Button" />
+                <ComboBox prefHeight="29.0" style="-fx-border-color:#ccc;&#10;">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Item 1" />
+                      <String fx:value="Item 2" />
+                      <String fx:value="Item 3" />
+                    </FXCollections>
+                  </items>
+                </ComboBox>
+              </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0" VBox.vgrow="ALWAYS">
+              <children>
+                <Label font="$x1" text="Even Better" />
+                <Label font="$x2" text="Some Advanced Styles" textFill="RED" />
+                <Button mnemonicParsing="false" style="-fx-background-radius: 4px;&#10;&#9;-fx-font-family: Arial;&#10;&#9;-fx-font-size: 18px;&#10;&#9;-fx-text-fill:#ffffff;&#10;&#9;-fx-background-color:&#10;&#9;&#9;linear-gradient(rgb(39,92,53) 0%, rgb(81,158,101) 100%);" text="Button" />
+                <ComboBox prefHeight="44.0" prefWidth="98.0">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Item 1" />
+                      <String fx:value="Item 2" />
+                      <String fx:value="Item 3" />
+                    </FXCollections>
+                  </items>
+                </ComboBox>
+              </children>
+              <stylesheets>
+                <URL value="@../css/main.css" />
+              </stylesheets>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: linear-gradient(rgb(254,242,223) 0%, rgb(222,214,155) 100%);" VBox.vgrow="ALWAYS">
+              <children>
+                <Label font="$x1" text="Better Still" />
+                <Label font="$x2" text="More tweaks" textFill="RED" />
+                <Button mnemonicParsing="false" style="-fx-effect: dropshadow( one-pass-box , rgb(0,0,0) , 5, 0.0 , 0 , 1 );&#9;" text="Button" />
+                <ComboBox>
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Item 1" />
+                      <String fx:value="Item 2" />
+                      <String fx:value="Item 3" />
+                    </FXCollections>
+                  </items>
+                </ComboBox>
+                <CheckBox mnemonicParsing="false" text="CheckBox" />
+              </children>
+              <padding>
+                <Insets left="10.0" right="10.0" />
+              </padding>
+              <stylesheets>
+                <URL value="@../css/main.css" />
+              </stylesheets>
+            </HBox>
+          </children>
+          <padding>
+            <Insets />
+          </padding>
+        </VBox>
+      </center>
+      <left>
+        <Pane prefHeight="300.0" prefWidth="51.000099999997474" />
+      </left>
+      <right>
+        <Pane prefHeight="300.0" prefWidth="51.0" />
+      </right>
+      <top>
+        <Pane prefHeight="50.0" prefWidth="600.0" />
+      </top>
+    </BorderPane>
+  </children>
+</AnchorPane>
